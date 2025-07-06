@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nats' Photo Uploader</title>
+    <link rel="stylesheet" href="Nats.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Nats' Photo Gallery</h1>
+            <p>Upload and store your favorite photos</p>
+        </div>
+        <div id="userInfo" class="user-info">
+            <!-- User info and logout button will be added here by JavaScript -->
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload a New Photo</h2>
+            <form id="uploadForm">
+                <label for="photoInput">Choose a photo:</label>
+                <input type="file" id="photoInput" name="photoInput" accept="image/*" required multiple>
+                <button type="submit" id="uploadButton">
+                    <span class="button-text">Upload</span>
+                    <span class="spinner hidden"></span>
+                </button>
+            </form>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Your Photos</h2>
+            <div id="photoGallery" class="photo-grid">
+                <!-- Photos will be added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="Nats.js"></script>
+</body>
+</html>
